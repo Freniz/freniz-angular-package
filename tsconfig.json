@@ -16,9 +16,9 @@
       "dom"
     ],
     "paths": {
-      "@freniz/angular": [
-        "dist/freniz/angular/freniz-angular",
-        "dist/freniz/angular"
+      "@freniz/ui": [
+        "dist/freniz/ui/freniz-ui",
+        "dist/freniz/ui"
       ]
     }
   },

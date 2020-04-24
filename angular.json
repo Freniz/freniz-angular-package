@@ -3,38 +3,38 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "@freniz/angular": {
+    "@freniz/ui": {
       "projectType": "library",
-      "root": "projects/freniz/angular",
-      "sourceRoot": "projects/freniz/angular/src",
+      "root": "projects/freniz/ui",
+      "sourceRoot": "projects/freniz/ui/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/freniz/angular/tsconfig.lib.json",
-            "project": "projects/freniz/angular/ng-package.json"
+            "tsConfig": "projects/freniz/ui/tsconfig.lib.json",
+            "project": "projects/freniz/ui/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/freniz/angular/tsconfig.lib.prod.json"
+              "tsConfig": "projects/freniz/ui/tsconfig.lib.prod.json"
             }
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/freniz/angular/src/test.ts",
-            "tsConfig": "projects/freniz/angular/tsconfig.spec.json",
-            "karmaConfig": "projects/freniz/angular/karma.conf.js"
+            "main": "projects/freniz/ui/src/test.ts",
+            "tsConfig": "projects/freniz/ui/tsconfig.spec.json",
+            "karmaConfig": "projects/freniz/ui/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/freniz/angular/tsconfig.lib.json",
-              "projects/freniz/angular/tsconfig.spec.json"
+              "projects/freniz/ui/tsconfig.lib.json",
+              "projects/freniz/ui/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -42,6 +42,7 @@
           }
         }
       }
-    }},
-  "defaultProject": "@freniz/angular"
+    }
+    },
+  "defaultProject": "@freniz/ui"
 }
