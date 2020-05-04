@@ -1,12 +1,15 @@
 import { NgModule } from '@angular/core';
-import { UiComponent } from './ui.component';
+import { MaterialModules } from './material.module';
 
+import { InputComponent } from './input/input.component';
+import { TextAreaComponent } from './textarea/textarea.component';
 
 
 @NgModule({
-  declarations: [UiComponent],
+  declarations: [InputComponent, TextAreaComponent],
   imports: [
+    MaterialModules
   ],
-  exports: [UiComponent]
+  exports: [InputComponent, TextAreaComponent]
 })
 export class UiModule { }
